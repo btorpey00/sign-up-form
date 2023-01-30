@@ -1,0 +1,141 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(Norse-Bold.otf);
+}
+@media only screen and (max-width: 400px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .sidebar {
+        width: 100vw;
+        max-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+    }
+    .side-content {
+        margin-top: 200px;
+    }
+}
+
+body {
+    display: flex;
+    background-color: rgba(85, 107, 47, 0.661);
+}
+
+.sidebar {
+    background-image: url(leafs.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 25%;
+    color: white;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+.side-content img {
+    height: 90px;
+    position: relative;
+    top: -10px;
+}
+
+.side-content {
+    background-color: rgba(0, 0, 0, 0.557);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: 'norse-bold', sans-serif;
+    font-size: 6em;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    position: relative;
+    top: -15vh;
+}
+
+.side-content p {
+    margin: 0px;
+}
+
+.main {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 750px;
+}
+
+.main-para {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    gap: 2px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-top: 40px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding: 0px;
+}
+
+input {
+    min-width: 250px;
+    padding: 5px;
+}
+
+input:valid {
+    border: 1px solid green;
+    background-color: rgba(0, 112, 0, 0.1);
+}
+
+input:invalid {
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+#create-account {
+    padding: 5px;
+    background-color: rgb(0, 58, 0);
+    color: blanchedalmond;
+    border-radius: 3px;
+    font-size: 1em;
+}
+
+.log-in {
+    margin-top: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: darkgreen;
+    font-weight: bold;
+}
